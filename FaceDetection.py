@@ -19,7 +19,7 @@ while True:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0,255,0), 2)
         cv2.putText(frame, f'Sujet {i}', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,0), 2)
 
-    # Afficher le nombre total de sujets sur la frame
+    
     total = len(faces)
     cv2.putText(frame, f'Total: {total}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
 
